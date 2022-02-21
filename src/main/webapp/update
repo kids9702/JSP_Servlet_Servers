@@ -1,0 +1,17 @@
+1. /Board/Update.do
+2. Frontcontroller
+3. BoardUpdateController
+   3-1)flag!=null(폼보여주기)
+   ->update.jsp 이동 
+
+   3-2)flag==null(업데이트처리)
+   1)파라미터 받기
+   subject,content
+   2)입력값 검증
+   3)서비스
+     service.BoardUpdate(vo)
+       ->dao.BoardUpdate(vo)
+            -> DB Update
+   4)이동
+     /Board/read.do
+     num,nowPage,start,end

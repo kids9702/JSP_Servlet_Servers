@@ -1,0 +1,11 @@
+CREATE TABLE `shopdb`.`board_tbl` (
+  `Num` INT NOT NULL AUTO_INCREMENT,
+  `Email` VARCHAR(45) NULL,
+  `Subject` VARCHAR(45) NULL,
+  `Content` TEXT NULL,
+  `regDate` DATE NULL,
+  `ip` VARCHAR(45) NULL,
+  `count` INT NULL,
+  `filename` VARCHAR(45) NULL,
+  `filesize` INT NULL,
+  PRIMARY KEY (`Num`));

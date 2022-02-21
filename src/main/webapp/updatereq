@@ -1,0 +1,16 @@
+1. /Board/Updatereq.do
+2. Froncontroller 
+3. BoardUpdateReqController
+
+  3-1) 게시물PW 확인 Form(flag!=null)
+  ->isUpdate.jsp 이동 Form 띄우기
+  3-2) 게시물PW vs 입력한PW(flag==null)
+  ->Session 에서 읽고있는 게시물 pw 추출
+  ->입력받은 게시물 pw 파라미터 추출
+  -> pw 비교 
+  if pw 일치
+     /Board/update.do 요청
+     flag=init,num,start,end,nowPage전달
+  else 
+     /Board/read.do 요청
+     num,start,end,nowPage전달
